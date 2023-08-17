@@ -47,7 +47,7 @@ func (c *delAccClient) Do(ctx context.Context, in *Request, opts ...grpc.CallOpt
 // for forward compatibility
 type DelAccServer interface {
 	Do(context.Context, *Request) (*Response, error)
-	mustEmbedUnimplementedDelAccServer()
+	
 }
 
 // UnimplementedDelAccServer must be embedded to have forward compatible implementations.
