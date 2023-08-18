@@ -37,7 +37,7 @@ func (x *Request) Reset() {
 	}
 }
 
-func (x *Request) String() []byte {
+func (x *Request) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
