@@ -60,7 +60,7 @@ func (*Request) Descriptor() ([]byte, []int) {
 	return file_sync_proto_rawDescGZIP(), []int{0}
 }
 
-func (x *Request) GetMessage() json {
+func (x *Request) GetMessage() string {
 	if x != nil {
 		return x.Message
 	}
