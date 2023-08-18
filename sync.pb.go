@@ -25,7 +25,7 @@ type Request struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Message string `protobuf:"bytes,1,opt,name=message,proto3" json:"message,omitempty"`
+	Message []byte `protobuf:"bytes,1,opt,name=message,proto3" json:"message,omitempty"`
 }
 
 func (x *Request) Reset() {
@@ -37,7 +37,7 @@ func (x *Request) Reset() {
 	}
 }
 
-func (x *Request) String() string {
+func (x *Request) String() []byte {
 	return protoimpl.X.MessageStringOf(x)
 }
 
@@ -60,7 +60,7 @@ func (*Request) Descriptor() ([]byte, []int) {
 	return file_sync_proto_rawDescGZIP(), []int{0}
 }
 
-func (x *Request) GetMessage() string {
+func (x *Request) GetMessage() json {
 	if x != nil {
 		return x.Message
 	}
